@@ -1,0 +1,16 @@
+{
+  "name": "Tarihin Bilgi Kapısı",
+  "short_name": "Tarih Kapısı",
+  "description": "Türk tarihini bilimsel kaynaklarla, bol görselle ve kolay anlaşılır biçimde öğrenin.",
+  "lang": "tr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f1e6",
+  "theme_color": "#8a3b1f",
+  "icons": [
+    { "src": "assets/simge/simge-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/simge/simge-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "assets/simge/simge-maskeli-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tarihin Bilgi Kapısı</title>
+  <meta name="description" content="Türk tarihini bilimsel kaynaklarla, bol görselle ve kolay anlaşılır biçimde öğrenin.">
+  <meta name="theme-color" content="#8a3b1f">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/simge/simge-192.png">
+  <link rel="apple-touch-icon" href="assets/simge/simge-180.png">
+  <meta name="apple-mobile-web-app-title" content="Tarih Kapısı">
+  <link rel="stylesheet" href="assets/leaflet/leaflet.css">
+  <link rel="stylesheet" href="css/stil.css">
+</head>
+<body>
+  <header class="ust">
+    <div class="ust-ic">
+      <a class="logo" href="#/" aria-label="Ana sayfa">
+        <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true">
+          <path d="M5 29V13a11 11 0 0 1 22 0v16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M11 29V15a5 5 0 0 1 10 0v14" fill="currentColor" opacity=".28"/>
+          <path d="M3 29h26" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+        <span>Tarihin Bilgi Kapısı</span>
+      </a>
+      <label class="arama">
+        <span class="gizli">Konu ara</span>
+        <input id="arama" type="search" placeholder="Konu, kişi veya olay ara…" autocomplete="off">
+      </label>
+      <button id="yukle" class="simge-dugme" type="button" aria-label="Uygulamayı yükle" title="Uygulamayı yükle" hidden>⤓</button>
+      <button id="tema" class="simge-dugme" type="button" aria-label="Açık / koyu tema" title="Açık / koyu tema">◐</button>
+    </div>
+    <nav class="menu" aria-label="Ana menü">
+      <a href="#/" data-sayfa="ana">Konular</a>
+      <a href="#/zaman" data-sayfa="zaman">Zaman Çizelgesi</a>
+      <a href="#/harita" data-sayfa="harita">Harita</a>
+      <a href="#/favoriler" data-sayfa="favoriler">Favoriler</a>
+    </nav>
+  </header>
+
+  <main id="icerik" tabindex="-1"></main>
+
+  <footer class="alt">
+    <div id="cevrimdisi" class="cevrimdisi" hidden>
+      <p id="cevrimdisi-durum"></p>
+      <button id="cevrimdisi-indir" class="dugme" type="button"></button>
+    </div>
+    <p>Metinler akademik yayınlara dayanır; her konunun sonunda kaynakları bulabilirsiniz.</p>
+    <p>Görseller Wikimedia Commons'tan alınmıştır; eser sahibi ve lisans bilgisi her görselin künyesinde yer alır.</p>
+  </footer>
+
+  <dialog id="buyutec" class="buyutec">
+    <button class="buyutec-kapat" type="button" aria-label="Kapat">✕</button>
+    <figure>
+      <img alt="">
+      <figcaption></figcaption>
+    </figure>
+  </dialog>
+
+  <script src="assets/leaflet/leaflet.js"></script>
+  <script src="onbellek.js"></script>
+  <script src="data/donemler.js"></script>
+  <script src="data/konular-1.js"></script>
+  <script src="data/konular-2.js"></script>
+  <script src="data/konular-3.js"></script>
+  <script src="data/konular-4.js"></script>
+  <script src="data/gorseller.js"></script>
+  <script src="js/uygulama.js"></script>
+</body>
+</html>
